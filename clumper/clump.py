@@ -12,7 +12,7 @@ class Clumper:
         return Clumper([self.blob[i] for i in range(n)])
 
     def tail(self, n):
-        return Clumper([self.blob[-i] for i in range(1, n+1)])
+        return Clumper([self.blob[-i] for i in range(1, n + 1)])
 
     def select(self, *keys):
         return Clumper([{k: d[k] for k in keys} for d in self.blob])
